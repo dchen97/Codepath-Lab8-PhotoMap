@@ -45,6 +45,18 @@ class PhotoMapViewController: UIViewController, UIImagePickerControllerDelegate,
         // Dispose of any resources that can be recreated.
     }
     
+    func locationsPickedLocation(controller: LocationsViewController, latitude: NSNumber, longitude: NSNumber) {
+        addPin(latitude: latitude, longitude: longitude)
+    }
+    
+    func addPin(latitude: NSNumber, longitude: NSNumber) {
+        let annotation = MKPointAnnotation()
+        let locationCoordinate = CLLocationCoordinate2D(latitude: Double(latitude), longitude: Double(longitude))
+        annotation.coordinate = locationCoordinate
+        annotation.title = String(describing: latitude)
+        mapView.addAnnotation(annotation)
+    }
+    
     func imagePickerController(_ picker: UIImagePickerController,
                                didFinishPickingMediaWithInfo info: [String : Any]) {
         // Get the image captured by the UIImagePickerController
