@@ -22,18 +22,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="TNg-Ua-3dQ">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="TNg-Ua-3dQ">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r9E-0l-p6G">
-                                <rect key="frame" x="124" y="517" width="127" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r9E-0l-p6G">
+                                <rect key="frame" x="155.5" y="517" width="64" height="64"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="camera"/>
+                                <connections>
+                                    <action selector="onCameraTap:" destination="ghP-Ww-KKQ" eventType="touchUpInside" id="X8z-yK-Cbn"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TNg-Ua-3dQ" firstAttribute="leading" secondItem="Lxe-6f-KEH" secondAttribute="leading" id="8Ss-Mt-igS"/>
+                            <constraint firstAttribute="trailing" secondItem="TNg-Ua-3dQ" secondAttribute="trailing" id="W2H-na-rUu"/>
+                            <constraint firstItem="ufw-e1-uLx" firstAttribute="top" secondItem="TNg-Ua-3dQ" secondAttribute="bottom" id="Xgl-U9-H49"/>
+                            <constraint firstItem="ufw-e1-uLx" firstAttribute="top" secondItem="r9E-0l-p6G" secondAttribute="bottom" constant="86" id="hyr-Nq-rhH"/>
+                            <constraint firstItem="TNg-Ua-3dQ" firstAttribute="top" secondItem="vrG-Wc-0bn" secondAttribute="bottom" id="td2-0m-OC2"/>
+                            <constraint firstItem="r9E-0l-p6G" firstAttribute="centerX" secondItem="Lxe-6f-KEH" secondAttribute="centerX" id="xBd-Vy-x4i"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="aPF-0T-Ydb"/>
                     <connections>
