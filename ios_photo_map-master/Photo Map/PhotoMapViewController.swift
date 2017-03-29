@@ -7,11 +7,19 @@
 //
 
 import UIKit
+import MapKit
 
 class PhotoMapViewController: UIViewController {
+    @IBOutlet weak var mapView: MKMapView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let mapCenter = CLLocationCoordinate2D(latitude: 37.783333, longitude: -122.416667)
+        let mapSpan = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
+        let region = MKCoordinateRegion(center: mapCenter, span: mapSpan)
+        // Set animated property to true to animate the transition to the region
+        mapView.setRegion(region, animated: false)
 
         // Do any additional setup after loading the view.
     }

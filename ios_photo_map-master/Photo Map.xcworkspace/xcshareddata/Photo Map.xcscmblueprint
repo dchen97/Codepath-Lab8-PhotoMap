@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "3FADFE650EA235E6FE7B7074015A4B1E97D2A8F1",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "10026771D7EF023E9D533CC0715A6E31464FB7F6" : 9223372036854775807,
+    "3FADFE650EA235E6FE7B7074015A4B1E97D2A8F1" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "7CF9E82E-3C04-480A-8A3A-79639AED5856",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "10026771D7EF023E9D533CC0715A6E31464FB7F6" : "",
+    "3FADFE650EA235E6FE7B7074015A4B1E97D2A8F1" : "Codepath-Lab8-PhotoMap\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Photo Map",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ios_photo_map-master\/Photo Map.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/dchen97\/Codepath-Lab3-GitHub.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "10026771D7EF023E9D533CC0715A6E31464FB7F6"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/dchen97\/Codepath-Lab8-PhotoMap.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3FADFE650EA235E6FE7B7074015A4B1E97D2A8F1"
+    }
+  ]
+}
